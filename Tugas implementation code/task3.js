@@ -14,7 +14,7 @@ const arkFood = (harga, voucher, jarak, pajak) => {
         potonganHarga = 50000;
       }
     } else {
-      console.log("Harus minimal belanja 50000 untuk dapat menggunakan voucher")
+      console.log("\nHarus minimal belanja 50000 untuk dapat menggunakan voucher")
     }
   }
   if (voucher === "DITRAKTIRDEMY") {
@@ -27,7 +27,7 @@ const arkFood = (harga, voucher, jarak, pajak) => {
         potonganHarga = 30000;
       }
     } else {
-      console.log("Harus minimal belanja 25000 untuk dapat menggunakan voucher")
+      console.log("\nHarus minimal belanja 25000 untuk dapat menggunakan voucher")
     }
   }
 
@@ -48,10 +48,13 @@ const arkFood = (harga, voucher, jarak, pajak) => {
 
   subTotal = harga - potonganHarga + ongkir + pajak;
 
-  console.log(`Harga = Rp ${harga}`);
+  console.log(`\nHarga = Rp ${harga}`);
   console.log(`Potongan Harga = Rp ${potonganHarga}`);
   console.log(`Biaya Antar = Rp ${ongkir}`);
   console.log(`Pajak = Rp ${pajak}`);
   console.log(`Jumlah Total = Rp ${subTotal}`);
 };
 arkFood(45000, "ARKAFOOD5", 5, true)
+arkFood(75000, "ARKAFOOD5", 5, false)
+arkFood(15000, "DITRAKTIRDEMY", 5, true)
+arkFood(75000, "DITRAKTIRDEMY", 5, false)
