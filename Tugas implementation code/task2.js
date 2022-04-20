@@ -10,7 +10,7 @@ const reverseWord = (text) => {
       word = ""
     }
   }
-  hasil = word + "" + hasil
+  hasil = word + hasil
   return hasil
 }
 console.log(reverseWord("Saya Belajar Javascript"))

@@ -23,7 +23,7 @@ const arkFood = (harga, voucher, jarak, pajak) => {
       if (diskon <= 30000) {
         potonganHarga = diskon;
       }
-      if (diskon >= 30000) {
+      if (diskon > 30000) {
         potonganHarga = 30000;
       }
     } else {
