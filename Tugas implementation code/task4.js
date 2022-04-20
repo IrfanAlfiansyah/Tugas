@@ -9,7 +9,7 @@ const divideAndSort = (num) => {
   for (let i = 0; i < splitNum.length; i = i + 1) {
     newNum = newNum + splitNum[i].split("").sort().join("");      //menggabungkan hasil looping dengan method split, sort dan join
   }
-  return `${newNum}`
+  return newNum
 }
 console.log(divideAndSort(5956560159466056));
 console.log(divideAndSort("9523746398000776"))

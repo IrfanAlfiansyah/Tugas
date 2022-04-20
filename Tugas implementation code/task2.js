@@ -1,7 +1,4 @@
 const reverseWord = (text) => {
-  if (typeof text !== "string"){
-    return "Text harus berupa string"
-  }
   let word = ""
   let hasil = ""
   for (let i = 0; i <= text.length-1; i = i+1){
@@ -16,5 +13,4 @@ const reverseWord = (text) => {
   hasil = word + "" + hasil
   return hasil
 }
-const output = reverseWord("Saya Belajar Javascript")
-console.log(output)
+console.log(reverseWord("Saya Belajar Javascript"))
