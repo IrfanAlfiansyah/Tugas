@@ -8,5 +8,5 @@ const cekPalindrom = (string) => {
   return `${string} Merupakan Palindrom`
 };
 
-console.log(cekPalindrom("Malam ini ini Malam"));
+console.log(cekPalindrom("Malam"));
 console.log(cekPalindrom("matahari"));
